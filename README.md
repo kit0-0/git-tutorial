@@ -69,7 +69,8 @@ Understanding Git and GitHub is crucial for several reasons:
 
 ### Exercise
 
-In this exercise, you will practice Gitflow with an empty repository. 
+In this exercise, you will practice Gitflow with an empty repository.
+
 ### Instructions
 
 1. **Create a New Repository**
@@ -89,7 +90,7 @@ In this exercise, you will practice Gitflow with an empty repository.
      ```sh
      git checkout -b dev
      ```
-   - Make sure that the `dev` branch is pushed to GitHub.
+   - Push the `dev` branch to GitHub and set the upstream branch.
      ```sh
      git push --set-upstream origin dev
      ```
@@ -132,6 +133,11 @@ In this exercise, you will practice Gitflow with an empty repository.
      ```sh
      git push --set-upstream origin add-quotes
      ```
+
+In simpler terms, using `--set-upstream` with `git push` does two things at once:
+
+1. **Push your branch to the remote repository**: This means you're sending your local branch (e.g., add-quotes) to a place where others can access it, like GitHub or GitLab.
+2. **Remember the connection**: It tells Git to remember that your local branch (e.g., add-quotes) is linked to the branch on the remote repository. This way, in the future, you can just use `git push` or `git pull` without having to specify the branch name every time.
 
 9. **Open a Pull Request**
    - Open a new pull request from `add-quotes` into `dev`.
